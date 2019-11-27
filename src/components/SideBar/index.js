@@ -1,7 +1,47 @@
-import React from 'react';
+import React from "react";
+import { IconButton } from "@material-ui/core";
+import { Reorder, Home, ListAlt, Star } from "@material-ui/icons";
 
-import { Container } from './styles';
+import colors from "../../styles/colors";
+import { Container, Item } from "./styles";
 
-const SideBar = () => <Container />;
+const SideBar = ({ selected, handleSideBarSelect }) => {
+  return (
+    <Container>
+      <Item enable={selected === 0}>
+        <IconButton>
+          <Reorder
+            htmlColor={selected === 0 ? colors.orange : "#fff"}
+            style={{ fontSize: 18 }}
+          />
+        </IconButton>
+      </Item>
+      <Item enable={selected === 1}>
+        <IconButton onClick={() => handleSideBarSelect(1)}>
+          <Home
+            htmlColor={selected === 1 ? colors.orange : "#fff"}
+            style={{ fontSize: 18 }}
+          />
+        </IconButton>
+      </Item>
+      <Item enable={selected === 2}>
+        <IconButton onClick={() => handleSideBarSelect(2)}>
+          <ListAlt
+            htmlColor={selected === 2 ? colors.orange : "#fff"}
+            style={{ fontSize: 18 }}
+          />
+        </IconButton>
+      </Item>
+      <Item enable={selected === 3}>
+        <IconButton onClick={() => handleSideBarSelect(3)}>
+          <Star
+            htmlColor={selected === 3 ? colors.orange : "#fff"}
+            style={{ fontSize: 18 }}
+          />
+        </IconButton>
+      </Item>
+    </Container>
+  );
+};
 
 export default SideBar;
