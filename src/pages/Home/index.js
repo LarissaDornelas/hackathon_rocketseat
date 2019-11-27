@@ -2,12 +2,13 @@ import React, { useState } from "react";
 
 import SideBar from "../../components/SideBar";
 
-import { Container, CardContainer } from "./styles";
+import { Container, DialogBox } from "./styles";
 import Header from "../../components/Header";
 import Card from "../../components/Card";
+import Ranking from "../../components/Ranking";
 import { Row } from "../../styles/global";
 
-function Home() {
+export default function Home() {
   const [header, setHeader] = useState({
     avatar: "icons/level1.svg",
     username: "João",
@@ -43,8 +44,13 @@ function Home() {
         />
         <Card value="70" subtitle="xp total adquirida" icon="icons/star.svg" />
       </Row>
+      <Row justifyContent="space-evenly">
+        <Ranking />
+        <Ranking />
+      </Row>
+      <Row>
+        <DialogBox></DialogBox>
+      </Row>
     </Container>
   );
 }
-
-export default Home;

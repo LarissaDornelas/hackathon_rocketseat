@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../styles/colors";
 
 export const Container = styled.div`
   display: flex;
@@ -6,9 +7,12 @@ export const Container = styled.div`
   margin-left: 60px;
 `;
 
-export const CardContainer = styled.div`
-  display: flex;
-  flex: 1;
-  background-color: red;
-  height: 200px;
+export const DialogBox = styled.div`
+  width: 420px;
+  height: 100px;
+  background: ${colors.gray};
+
+  p {
+    color: #968e8e;
+  }
 `;
