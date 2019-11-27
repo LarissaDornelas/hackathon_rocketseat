@@ -3,16 +3,17 @@ import colors from "../../styles/colors";
 
 export const Container = styled.div`
   display: flex;
-  width: 46%;
-  height: 192px;
+  flex-direction: column;
+  align-items: baseline;
+  width: 46.4%;
 `;
 
 export const Table = styled.table`
    
-    border-collapse: collapse;
-    
+
     background: ${colors.gray}
     width: 100%;
+    border-radius: 4px;
 
     th{
         padding: 20px 15px;
@@ -34,4 +35,8 @@ export const Table = styled.table`
       }
 
 
+`;
+
+export const Title = styled.span`
+  color: #fff;
 `;

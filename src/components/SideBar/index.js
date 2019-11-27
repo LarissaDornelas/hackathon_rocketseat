@@ -33,7 +33,7 @@ const SideBar = ({ selected }) => {
         </IconButton>
       </Item>
       <Item enable={selected === 3}>
-        <IconButton onClick={() => {}}>
+        <IconButton onClick={() => (window.location.href = "/ranking")}>
           <Star
             htmlColor={selected === 3 ? colors.orange : "#fff"}
             style={{ fontSize: 18 }}
