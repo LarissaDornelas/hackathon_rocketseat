@@ -1,3 +1,4 @@
 import { combineReducers } from "redux";
+import missions from "./missions";
 
-export default combineReducers({});
+export default combineReducers({ missions });

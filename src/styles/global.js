@@ -47,4 +47,7 @@ export const Column = styled.div`
   border: ${props => props.border || "0 solid transparent"};
   background-color: ${props => props.backgroundColor || "transparent"};
   min-width: ${props => props.minWidth || "0px"};
+  justify-content: ${props => props.justifyContent || null};
+  align-items: ${props => props.alignItems || null};
+  padding: ${props => props.padding || "0 0 0 0"};
 `;

@@ -64,12 +64,45 @@ export const PvPSword = styled.img.attrs({
 })``;
 
 export const Castle = styled.img.attrs({
-  src: "icons/castle.svg",
-  width: "300px",
-  height: "300px",
+  src: "icons/castle.png",
+  width: "auto",
+  height: "250px",
   style: {
     position: "absolute",
     right: "0",
     bottom: "0px"
   }
 })``;
+
+export const Box = styled.div`
+  width: 60%;
+  background-color: ${colors.gray};
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+  z-index: 100;
+`;
+
+export const Title = styled.h3`
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+`;
+
+export const Description = styled.p`
+  color: white;
+`;
+
+export const Button = styled.button`
+  width: 40%;
+  background-color: ${colors.orange};
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: #da9748;
+  }
+`;
