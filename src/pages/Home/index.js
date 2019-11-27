@@ -8,7 +8,6 @@ import Card from "../../components/Card";
 import { Row } from "../../styles/global";
 
 function Home() {
-  const [selected, setSelected] = useState(1);
   const [header, setHeader] = useState({
     avatar: "icons/level1.svg",
     username: "João",
@@ -16,17 +15,11 @@ function Home() {
     nextLevel: "120",
     ms: "60"
   });
-  const handleSideBarSelect = id => {
-    setSelected(id);
-  };
 
   return (
     <Container>
       <Row>
-        <SideBar
-          selected={selected}
-          handleSideBarSelect={handleSideBarSelect}
-        />
+        <SideBar selected={1} />
         <Header
           title="Informações"
           avatar={header.avatar}
