@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Journey from "../pages/Journey";
 import Mission from "../pages/Mission";
+import Ranking from "../pages/Ranking";
 
 const Routes = () => (
   <BrowserRouter>
@@ -12,6 +13,7 @@ const Routes = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/journey" component={Journey} />
         <Route exact path="/mission" component={Mission} />
+        <Route exact path="/ranking" component={Ranking} />
       </Switch>
     </Fragment>
   </BrowserRouter>

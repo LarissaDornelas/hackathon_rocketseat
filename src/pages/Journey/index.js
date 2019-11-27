@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
 
-import api from "../../services/api";
+import { api } from "../../services/api";
 import Header from "../../components/Header";
 import SideBar from "../../components/SideBar";
 import { Row, Column } from "../../styles/global";
@@ -18,7 +18,7 @@ import {
   Description,
   Button
 } from "./styles";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Creators as MissionsActions } from "../../store/ducks/missions";
 
 const Journey = ({ history }) => {

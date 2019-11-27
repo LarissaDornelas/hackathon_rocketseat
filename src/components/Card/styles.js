@@ -10,12 +10,6 @@ export const Container = styled.div`
   border-radius: 5px;
   max-width: 22%;
   justify-content: space-between;
-  cursor: pointer;
-
-  &:hover {
-    height: 130px;
-    max-width: 23%;
-  }
 `;
 
 export const Content = styled.div`

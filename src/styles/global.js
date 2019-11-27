@@ -34,6 +34,7 @@ export const Row = styled.div`
   border-top: ${props => props.borderTop || "0px solid #fff"};
   border-bottom: ${props => props.borderBottom || "0px solid #fff"};
   margin: ${props => props.margin || "0 0 10px 0"};
+  position: ${props => props.position || null};
   padding: ${props => props.padding || "0 0 0 0"};
   background-color: ${props => props.backgroundColor || null};
   flex-wrap: wrap;
