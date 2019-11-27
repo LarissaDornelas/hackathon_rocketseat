@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import colors from './colors';
 
 export default createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
@@ -16,6 +17,7 @@ export default createGlobalStyle`
     }
     body {
         -webkit-font-smoothing: antialiased !important;
+        background-color: ${colors.dark};
     }
     button {
         cursor: pointer;

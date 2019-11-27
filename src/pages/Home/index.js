@@ -1,10 +1,13 @@
-import React from "react";
-import {} from "./styles";
+import React from 'react';
+
+import SideBar from '~/components/SideBar';
+
+import {} from './styles';
 
 function Home() {
   return (
     <div>
-      <h1>Olá mundo</h1>
+      <SideBar />
     </div>
   );
 }
