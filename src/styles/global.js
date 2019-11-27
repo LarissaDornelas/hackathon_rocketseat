@@ -42,9 +42,9 @@ export const Row = styled.div`
 export const Column = styled.div`
   display: flex;
   flex: ${props => props.flex || null};
-  flex-direction: column;
+  flex-direction: ${props => props.flexDirection || "column"};
   margin: ${props => props.margin || "0 0"}px;
-  border: ${props => props.border || "0 solid #fff"};
-  background-color: ${props => props.backgroundColor || "#fff"};
+  border: ${props => props.border || "0 solid transparent"};
+  background-color: ${props => props.backgroundColor || "transparent"};
   min-width: ${props => props.minWidth || "0px"};
 `;

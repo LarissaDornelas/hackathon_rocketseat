@@ -5,10 +5,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 60px;
-  height: 100vh;
+  flex: 1;
   align-items: center;
   background-color: ${colors.gray};
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
